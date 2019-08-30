@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   var submit = document.querySelectorAll("#submit")[0];
   var days = document.querySelectorAll("#days")[0];
-  var table = document.querySelectorAll("#table");
+  var table = document.querySelectorAll("#table")[0];
   submit.addEventListener("click", function () {
     var number = parseInt(days.value);
     var header = `
