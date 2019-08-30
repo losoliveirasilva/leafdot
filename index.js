@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  var submit = document.querySelectorAll("#submit");
+  var submit = document.querySelectorAll("#submit")[0];
   var days = document.querySelectorAll("#days");
   var table = document.querySelectorAll("#table");
   submit.addEventListener("click", function () {
@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
         <th>2a Saída</th>
       </tr>
     `
-    var max = 5;
+    var high = 5;
     for (i = 0; i < number; i++) {
-      var low = 5
+      var low = 0
       var first = Math.floor(Math.random() * (high - low + 1) + low);
       var second = Math.floor(Math.random() * (high - low + 1) + low);
       low = second;
